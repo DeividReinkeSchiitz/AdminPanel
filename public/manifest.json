@@ -1,6 +1,6 @@
 {
-  "short_name": "Azon Admin",
-  "name": "Administração Azon",
+  "short_name": "Admin Panel",
+  "name": "Painel de Administração",
   "icons": [
     {
       "src": "favicon.ico",
