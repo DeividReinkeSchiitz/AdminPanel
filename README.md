@@ -1,6 +1,5 @@
 # Responsible Panel to Administrators 
-![Twitter](![image](https://user-images.githubusercontent.com/55961826/111052422-ff36a500-8430-11eb-8e29-eaf7e26f1d34.png))
-
+![image](https://user-images.githubusercontent.com/55961826/111052422-ff36a500-8430-11eb-8e29-eaf7e26f1d34.png)
 
 ## SEE THE PROJECT RUNNING
 
