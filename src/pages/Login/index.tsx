@@ -86,7 +86,7 @@ const Login = () => {
         .auth()
         .setPersistence(firebase.auth.Auth.Persistence.LOCAL);
 
-      const user = firebase.auth().signInWithEmailAndPassword(email, password);
+      const user = await firebase.auth().signInWithEmailAndPassword(email, password);
 
       if (user) {
         await localStorage.setItem("userAuthenticated", "true");

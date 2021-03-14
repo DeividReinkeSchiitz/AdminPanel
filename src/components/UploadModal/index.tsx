@@ -1,26 +1,51 @@
+import { Backdrop, Button, Fade } from "@material-ui/core";
+import { CloudUpload, PictureAsPdf, Save } from "@material-ui/icons";
+import Alert from "@material-ui/lab/Alert";
 import React, { useEffect, useState } from "react";
+import firebase from "../../config/firebaseConfig";
 import {
-  Container,
-  CurrentModal,
-  TitleMember,
-  SubmitButton,
-  CancelButton,
-  ButtonsContainer,
-  DescriptionInput,
-  ContainerButton,
-  UploadSpan,
-  PdfContainer,
-  DeleteIcon,
-  CollapseSuccess,
-  SpanError,
-  FindText,
+  ButtonsContainer, CancelButton,
+
+
+
+
+
+
+  CollapseSuccess, Container,
+
+
+
+
+
+
+  ContainerButton, CurrentModal,
+
+
+
+
+
+
+
+
+  DeleteIcon, DescriptionInput,
+
+
+
+
+
+
+  FindText, PdfContainer,
+
+
+  SpanError, SubmitButton, TitleMember,
+
+
+
+
+
+  UploadSpan
 } from "./styles";
 
-import { Save, CloudUpload, PictureAsPdf } from "@material-ui/icons";
-import { Backdrop, Button, Fade } from "@material-ui/core";
-import Alert from "@material-ui/lab/Alert";
-import axios from "axios";
-import firebase from "../../config/firebaseConfig";
 
 interface propsI {
   open: boolean;
