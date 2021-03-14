@@ -90,7 +90,7 @@ const Login = () => {
 
       if (user) {
         await localStorage.setItem("userAuthenticated", "true");
-        window.location.replace("/Home");
+        history.push("/Home");
       } else {
         await localStorage.setItem("userAuthenticated", "false");
       }
