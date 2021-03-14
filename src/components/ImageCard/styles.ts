@@ -1,7 +1,7 @@
-import styled, { css } from "styled-components";
 import { Card } from "@material-ui/core";
-
 import { AccessAlarm, Check, NotInterested } from "@material-ui/icons";
+import styled, { css } from "styled-components";
+
 
 const iconCss = css`
   position: absolute;

@@ -1,20 +1,20 @@
-import React, { useState, useEffect } from "react";
-
-import { ContainerCount, Container, useStyles } from "./styles";
-
-import ScrollMenu from "react-horizontal-scrolling-menu";
-import ImageCard from "../ImageCard";
-
 import {
   Accordion,
   AccordionDetails,
   AccordionSummary,
   Divider,
-  Typography,
+  Typography
 } from "@material-ui/core";
-
 import { ExpandMore } from "@material-ui/icons";
-import { ArtMonthDataI, WeeksI, WeekI } from "../../common/types";
+import React from "react";
+import ScrollMenu from "react-horizontal-scrolling-menu";
+import { ArtMonthDataI, WeekI, WeeksI } from "../../common/types";
+import ImageCard from "../ImageCard";
+import { Container, ContainerCount, useStyles } from "./styles";
+
+
+
+
 
 interface PropsWeeksI {
   month: string;
@@ -53,11 +53,11 @@ const Weeks = (props: PropsWeeksI) => {
                 <Typography className={classes.TextWeek}>
                   {key.includes("Semana")
                     ? [
-                        "S",
-                        key.slice(1, key.length - 1),
-                        " ",
-                        key.slice(key.length - 1),
-                      ].join("")
+                      "S",
+                      key.slice(1, key.length - 1),
+                      " ",
+                      key.slice(key.length - 1),
+                    ].join("")
                     : "Cronogramas"}
                 </Typography>
               </AccordionSummary>

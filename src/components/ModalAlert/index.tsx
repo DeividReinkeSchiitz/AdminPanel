@@ -1,22 +1,25 @@
 /* eslint-disable no-useless-escape */
+import { Backdrop, Fade } from "@material-ui/core";
+import axios from "axios";
 import React from "react";
-
+import { useHistory } from "react-router-dom";
+import firebase from "../../config/firebaseConfig";
 import {
-  Container,
+  ButtonsContainer, CancelButton, Container,
   CurrentModal,
-  TitleMember,
-  RemoveButton,
-  CancelButton,
-  ButtonsContainer,
-  Description,
-  TitleContainer,
+
+
+
+
+  Description, RemoveButton,
+
+
+
+  TitleContainer, TitleMember
 } from "./styles";
 
-import firebase from "../../config/firebaseConfig";
 
-import { Backdrop, Fade } from "@material-ui/core";
-import { useHistory } from "react-router-dom";
-import axios from "axios";
+
 interface ModalComponentI {
   handleModal: () => any;
   open: boolean;

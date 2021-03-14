@@ -1,30 +1,23 @@
 /* eslint-disable no-useless-escape */
+import { Backdrop, Fade, InputAdornment } from "@material-ui/core";
+import { Save } from "@material-ui/icons";
 import React, { useState } from "react";
-import cpfValidation from "../../common/functions/cpfValidation";
 import cnpjValidation from "../../common/functions/cnpjValidation";
-
+import cpfValidation from "../../common/functions/cpfValidation";
+import { cnpjMask, cpfMask } from "../../common/functions/mask";
+import firebase from "../../config/firebaseConfig";
 import {
   Container,
-  EmailField,
-  CpfField,
-  NameField,
-  FormContainer,
-  CurrentModal,
-  TitleMember,
-  CostField,
-  ServiceField,
-  CreateButton,
-  PaymentField,
-  StyledTextField,
+  CostField, CpfField,
+  CreateButton, CurrentModal, EmailField,
+  FormContainer, NameField,
+  PaymentField, ServiceField,
+  StyledTextField, TitleMember
 } from "./styles";
 
-import firebase from "../../config/firebaseConfig";
 
-import { Save } from "@material-ui/icons";
 
-import { Backdrop, Fade, InputAdornment } from "@material-ui/core";
-import { cnpjMask, cpfMask } from "../../common/functions/mask";
-import axios from "axios";
+
 interface ModalComponentI {
   handleModal: () => any;
   open: boolean;

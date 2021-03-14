@@ -1,22 +1,27 @@
+import AddIcon from "@material-ui/icons/Add";
 import React, { ReactNode, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import AddIcon from "@material-ui/icons/Add";
-import {
-  Container,
-  Header,
-  ContainerRow,
-  Title,
-  ContainerCount,
-  UploadButton,
-  ImageFileSearch,
-} from "./styles";
-
-import firebase from "../../config/firebaseConfig";
-
+import ImageFile from "../../assets/image/fileSearching.svg";
+import ExtendMenu from "../../components/ExtendMenu";
 import ReportsTable from "../../components/ReportsTable";
 import UploadModal from "../../components/UploadModal";
-import ExtendMenu from "../../components/ExtendMenu";
-import ImageFile from "../../assets/image/fileSearching.svg";
+import firebase from "../../config/firebaseConfig";
+import {
+  Container,
+
+
+
+  ContainerCount, ContainerRow, Header,
+
+
+
+
+  ImageFileSearch, Title,
+
+  UploadButton
+} from "./styles";
+
+
 interface ParamsI {
   id: string;
 }
@@ -53,11 +58,11 @@ const ReportPage: React.FC = () => {
       reports.forEach((report) => {
         const data:
           | {
-              fileName: string;
-              shortDescription: string;
-              createdAt: string;
-              downloadUrl: string;
-            }
+            fileName: string;
+            shortDescription: string;
+            createdAt: string;
+            downloadUrl: string;
+          }
           | any = report.data();
 
         reportsData.push({

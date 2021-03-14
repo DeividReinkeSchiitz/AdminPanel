@@ -1,19 +1,19 @@
 import React, { useState } from "react";
 import {
   BrowserRouter as Router,
-  Switch,
-  Route,
-  Redirect,
-} from "react-router-dom";
 
+
+  Redirect, Route, Switch
+} from "react-router-dom";
 import Drawer from "../components/Drawer";
-import Bill from "../pages/Bill";
-import Report from "../pages/Report";
-import Home from "../pages/Home";
-import AddBill from "../pages/AddBill";
-import Login from "../pages/Login";
-import Arts from "../pages/Arts";
 import AddArt from "../pages/AddArt";
+import AddBill from "../pages/AddBill";
+import Arts from "../pages/Arts";
+import Bill from "../pages/Bill";
+import Home from "../pages/Home";
+import Login from "../pages/Login";
+import Report from "../pages/Report";
+
 
 const App = () => {
   const [userAuthenticated, setUserAuthenticated] = useState(

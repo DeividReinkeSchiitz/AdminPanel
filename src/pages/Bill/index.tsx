@@ -1,25 +1,29 @@
+import AddIcon from "@material-ui/icons/Add";
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import AddIcon from "@material-ui/icons/Add";
-import {
-  Container,
-  Header,
-  ContainerRow,
-  Title,
-  ContainerCount,
-  UploadButton,
-  BillText,
-  ImageFileSearch,
-} from "./styles";
-
-import firebase from "../../config/firebaseConfig";
-
+import BillFile from "../../assets/image/bill.svg";
+import { BillI } from "../../common/types";
 import BillTable from "../../components/BillTable";
 import ExtendMenu from "../../components/ExtendMenu";
+import firebase from "../../config/firebaseConfig";
+import {
+  BillText, Container,
 
-import { BillI } from "../../common/types";
-import BillFile from "../../assets/image/bill.svg";
-import { firestore } from "firebase-admin";
+
+
+  ContainerCount, ContainerRow, Header,
+
+
+
+
+
+  ImageFileSearch, Title,
+
+  UploadButton
+} from "./styles";
+
+
+
 interface ParamsI {
   id: string;
 }

@@ -1,19 +1,20 @@
-import React, { useState, useEffect } from "react";
-import { Menu, FormControlLabel } from "@material-ui/core";
+import { FormControlLabel, Menu } from "@material-ui/core";
 import { ExpandMore } from "@material-ui/icons";
-import axios from "axios";
-
+import React, { useEffect, useState } from "react";
+import { cnpjMask, cpfMask } from "../../common/functions/mask";
+import firebase from "../../config/firebaseConfig";
 import {
   ButtonStyled,
   Container,
   ContainerInfo,
-  IOSSwitch,
+
+
+
+  FormContainer, IOSSwitch,
   MenuItemStyled,
-  StyledTextField,
-  FormContainer,
+  StyledTextField
 } from "./styles";
-import { cnpjMask, cpfMask } from "../../common/functions/mask";
-import firebase from "../../config/firebaseConfig";
+
 interface PropsI {
   data: {
     name: string;

@@ -1,31 +1,58 @@
-import React, { useState, useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
-import { Button, InputAdornment } from "@material-ui/core";
+import { Button } from "@material-ui/core";
 import { PictureAsPdf } from "@material-ui/icons";
-import { useHistory } from "react-router-dom";
-
-import {
-  Container,
-  Header,
-  ArrawBack,
-  ButtonBack,
-  FormContainer,
-  BillCodeField,
-  NameField,
-  DueDateField,
-  Title,
-  ContainerButton,
-  FindText,
-  SubmitButton,
-  PdfContainer,
-  UploadSpan,
-  SwitchContainer,
-  DeleteIcon,
-  SpanError,
-} from "./styles";
-
+import React, { useState } from "react";
+import { Link, useHistory, useParams } from "react-router-dom";
 import SwitchStatus from "../../components/SwitchStatus";
 import firebase from "../../config/firebaseConfig";
+import {
+  ArrawBack,
+
+
+  BillCodeField, ButtonBack, Container,
+
+
+
+
+
+
+
+
+  ContainerButton,
+
+
+
+
+
+  DeleteIcon, DueDateField,
+
+
+  FindText, FormContainer, Header,
+
+
+
+
+  NameField,
+
+
+
+
+
+  PdfContainer,
+
+
+
+  SpanError, SubmitButton,
+
+
+  SwitchContainer, Title,
+
+
+
+
+  UploadSpan
+} from "./styles";
+
+
 interface ParamsI {
   id: string;
 }

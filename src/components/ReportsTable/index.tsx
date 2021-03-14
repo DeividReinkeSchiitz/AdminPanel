@@ -1,5 +1,3 @@
-import React, { useState } from "react";
-
 import {
   Table,
   TableBody,
@@ -7,10 +5,12 @@ import {
   TableContainer,
   TableHead,
   TablePagination,
-  TableRow,
+  TableRow
 } from "@material-ui/core";
-import { PaperContainer } from "./styles";
+import React, { useState } from "react";
 import { ColumnReportsI, ReportsI } from "../../common/types";
+import { PaperContainer } from "./styles";
+
 
 const columns: ColumnReportsI[] = [
   { id: "fileName", label: "Nome", minWidth: 100 },

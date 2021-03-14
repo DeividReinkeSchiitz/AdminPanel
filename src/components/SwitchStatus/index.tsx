@@ -1,7 +1,7 @@
-import React from "react";
 import { FormControlLabel, FormGroup } from "@material-ui/core";
-
+import React from "react";
 import { BlueSwitch } from "./styles";
+
 
 interface PropsI {
   checked: boolean;

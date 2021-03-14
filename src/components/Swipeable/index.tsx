@@ -1,14 +1,13 @@
-import React, { useState } from "react";
-
 import {
   SwipeableList,
-  SwipeableListItem,
+  SwipeableListItem
 } from "@sandstreamdev/react-swipeable-list";
 import "@sandstreamdev/react-swipeable-list/dist/styles.css";
-import firebase from "../../config/firebaseConfig";
-
-import { SwipeableRight, DeleteText, DeleteIcon } from "./styles";
+import React, { useState } from "react";
 import ModalAlert from "../ModalAlert";
+import { DeleteIcon, SwipeableRight } from "./styles";
+
+
 
 interface SwipeableI {
   children: any;

@@ -1,10 +1,10 @@
 import { Button, Menu } from "@material-ui/core";
+import { DeleteOutline, MoreHoriz, Tv } from "@material-ui/icons";
 import React from "react";
-
-import { MenuText, MenuItemComponent } from "./styles";
-import { MoreHoriz, DeleteOutline, Tv } from "@material-ui/icons";
-
 import firebase from "../../config/firebaseConfig";
+import { MenuItemComponent, MenuText } from "./styles";
+
+
 interface PropsI {
   fileName: string;
   userId: string;

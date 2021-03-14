@@ -1,7 +1,7 @@
 import React from "react";
-
-import { ImageContainer, Image, Container } from "./styles";
 import Empty from "../../assets/image/empty.svg";
+import { Container, Image, ImageContainer } from "./styles";
+
 const Home: React.FC = () => {
   return (
     <Container>

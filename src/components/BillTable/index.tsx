@@ -1,5 +1,3 @@
-import React, { useState } from "react";
-
 import {
   Table,
   TableBody,
@@ -7,12 +5,14 @@ import {
   TableContainer,
   TableHead,
   TablePagination,
-  TableRow,
+  TableRow
 } from "@material-ui/core";
-import { PaperContainer, ChangeStatus } from "./styles";
-import { ColumnBillI, BillI } from "../../common/types";
 import { Loop } from "@material-ui/icons";
+import React, { useState } from "react";
+import { BillI, ColumnBillI } from "../../common/types";
 import firebase from "../../config/firebaseConfig";
+import { ChangeStatus, PaperContainer } from "./styles";
+
 
 const columns: ColumnBillI[] = [
   {

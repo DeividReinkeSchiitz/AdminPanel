@@ -1,5 +1,5 @@
-import { Button, TextField, TextFieldProps } from "@material-ui/core";
-import styled, { css, Keyframes, keyframes } from "styled-components";
+import { Button, TextField } from "@material-ui/core";
+import styled, { css, keyframes } from "styled-components";
 
 export const Container = styled.div`
   display: flex;
@@ -152,7 +152,7 @@ interface PasswordProps {
   animationName?: "fadeInAnimation" | "fadeOutAnimation";
 }
 
-export const PasswordInput = styled(TextField)<PasswordProps>`
+export const PasswordInput = styled(TextField) <PasswordProps>`
   ${fieldCss}
   animation-name: ${(props) => eval(props.animationName || "") || "none"};
   animation-duration: 500ms;

@@ -1,5 +1,5 @@
-import styled from "styled-components";
 import { Delete } from "@material-ui/icons";
+import styled from "styled-components";
 
 export const SwipeableRight = styled.div`
   display: flex;

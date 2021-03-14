@@ -1,29 +1,33 @@
 import React, { useState } from "react";
-
+import { useHistory } from "react-router-dom";
+import Image from "../../assets/image/LoginImage.svg";
+import firebase from "../../config/firebaseConfig";
+import GlobalStyles from "../../styles/GlobalStyles";
 import {
-  Container,
-  Title,
-  ImageContainer,
-  SubmitButton,
-  PasswordInput,
+  AdviceSpan, AlertError, Container,
+
+
+
+
   EmailInput,
-  LoginTitle,
+
+
+
+
+
+
+  FormContainer, ImageContainer,
+
+
+
+
   LoginContainer,
   LoginImage,
-  AlertError,
-  LoginImageRight,
-  Register,
-  FormContainer,
-  SkipButton,
-  AdviceSpan,
-} from "./styles";
-import Image from "../../assets/image/LoginImage.svg";
-import GlobalStyles from "../../styles/GlobalStyles";
 
-import firebase from "../../config/firebaseConfig";
-import { useHistory } from "react-router-dom";
-import api from "../../services/api";
-import { ApiI } from "../../common/types";
+  LoginImageRight, LoginTitle, PasswordInput, SubmitButton, Title
+} from "./styles";
+
+
 
 const Login = () => {
   const [errorMessage, setErrorMessage] = useState("");
@@ -85,8 +89,8 @@ const Login = () => {
       const user = firebase.auth().signInWithEmailAndPassword(email, password);
 
       if (user) {
-        window.location.replace("/Home");
         await localStorage.setItem("userAuthenticated", "true");
+        window.location.replace("/Home");
       } else {
         await localStorage.setItem("userAuthenticated", "false");
       }

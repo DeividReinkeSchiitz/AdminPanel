@@ -1,25 +1,29 @@
+import { Menu, MenuItem } from "@material-ui/core";
+import { Add, ExpandMore } from "@material-ui/icons";
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
+import artMonster from "../../assets/image/artMonter.svg";
+import { ArtDataI, ArtsFirebaseI } from "../../common/types";
+import ArtList from "../../components/ArtList";
+import firebase from "../../config/firebaseConfig";
+import UserIdContext from "../../Context/userIdContext";
 import {
-  Container,
-  Header,
-  ContainerRow,
-  Title,
-  ContainerCount,
-  UploadButton,
   ArtText,
-  ButtonTitle,
-  ImageFileSearch,
+  ButtonTitle, Container,
+
+  ContainerRow, Header,
+
+
+
+
+
+
+  ImageFileSearch, Title,
+
+  UploadButton
 } from "./styles";
 
-import { ExpandMore, Add } from "@material-ui/icons";
-import { Menu, MenuItem } from "@material-ui/core";
 
-import firebase from "../../config/firebaseConfig";
-import ArtList from "../../components/ArtList";
-import { ArtDataI, ArtsFirebaseI } from "../../common/types";
-import UserIdContext from "../../Context/userIdContext";
-import artMonster from "../../assets/image/artMonter.svg";
 
 interface ParamsI {
   id: string;
@@ -253,7 +257,7 @@ const CurrentHeader = (props: HeaderPropsI) => {
           color: "#fff",
         }}
       >
-        <UploadButton onClick={() => {}}>
+        <UploadButton onClick={() => { }}>
           <Add />
           <ArtText>Nova Arte</ArtText>
         </UploadButton>

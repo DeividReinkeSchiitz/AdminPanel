@@ -1,39 +1,74 @@
-import React, { useState, useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
-import { PictureAsPdf, Backup } from "@material-ui/icons";
-import { useHistory } from "react-router-dom";
-import { InputValuesI } from "../../common/types";
 import {
   Button,
-  InputLabel,
-  MenuItem,
-  FormControl,
-  Select,
-} from "@material-ui/core";
 
+
+  FormControl, InputLabel,
+  MenuItem,
+
+  Select
+} from "@material-ui/core";
+import { PictureAsPdf } from "@material-ui/icons";
+import React, { useState } from "react";
+import { Link, useHistory, useParams } from "react-router-dom";
+import { InputValuesI } from "../../common/types";
+import firebase from "../../config/firebaseConfig";
 import {
-  Container,
-  Header,
   ArrawBack,
-  ButtonBack,
-  FormContainer,
-  Title,
+
+
+
+
+
+
+
+
+
+
+
+
+  ArtImage, ButtonBack, Container,
+
+
+
+
+
   ContainerButton,
-  FindText,
-  SubmitButton,
+
+
+
+
+
+
+  DataContainer, DeleteIcon, FindText, FormContainer, Header,
+
+
+
+
+
+
+
   PdfContainer,
-  UploadSpan,
-  DeleteIcon,
-  SpanError,
-  DataContainer,
-  UploadContainer,
-  ArtImage,
-  useStyles,
+
+
+  SpanError, SubmitButton, Title,
+
+
+
+
+
+
+
+
+  UploadContainer, UploadSpan,
+
+
+
+
+
+  useStyles
 } from "./styles";
 
-import firebase from "../../config/firebaseConfig";
-import { ArtsFirebaseI } from "../../common/types";
-import axios from "axios";
+
 interface ParamsI {
   id: string;
 }

@@ -1,45 +1,50 @@
-import React, { useEffect, useState } from "react";
-import clsx from "clsx";
-import { useTheme } from "@material-ui/core/styles";
-
 import {
-  Drawer,
   AppBar,
-  Toolbar,
-  List,
-  Divider,
-  ListItem,
-  ListItemText,
-  IconButton,
-  Fab,
-} from "@material-ui/core";
 
+
+  Divider, Drawer,
+
+
+
+
+
+
+
+  Fab, IconButton, List,
+
+  ListItem,
+  ListItemText, Toolbar
+} from "@material-ui/core";
+import { useTheme } from "@material-ui/core/styles";
 import {
-  Menu,
   Add,
   ChevronLeft,
   ChevronRight,
-  ExpandMore,
-  ExpandLess,
+  ExpandMore, Menu
 } from "@material-ui/icons";
-
+import clsx from "clsx";
+import React, { useEffect, useState } from "react";
+import { Link, NavLink, useHistory } from "react-router-dom";
+import firebase from "../../config/firebaseConfig";
+import AddUserModal from "../AddUserModal";
+import DropdownData from "../DropdownData";
+import Swipeable from "../Swipeable";
 import {
-  useStyles,
-  Loading,
-  NavigationTextContent,
-  LinkText,
-  MuiAccordion,
+  LinkText, Loading,
+
+
+
+
+
+  Logout, MuiAccordion,
   MuiAccordionDetails,
-  MuiAccordionSummary,
-  Logout,
+  MuiAccordionSummary, NavigationTextContent, useStyles
 } from "./styles";
 
-import firebase from "../../config/firebaseConfig";
 
-import { Link, NavLink, useHistory } from "react-router-dom";
-import AddUserModal from "../AddUserModal";
-import Swipeable from "../Swipeable";
-import DropdownData from "../DropdownData";
+
+
+
 
 interface DrawerI {
   children: any;

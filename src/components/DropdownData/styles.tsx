@@ -1,8 +1,8 @@
-import styled from "styled-components";
-import { Button, MenuItem, TextField } from "@material-ui/core";
-import { withStyles, Theme, createStyles } from "@material-ui/core/styles";
+import { MenuItem, TextField } from "@material-ui/core";
+import { createStyles, Theme, withStyles } from "@material-ui/core/styles";
 import Switch, { SwitchClassKey, SwitchProps } from "@material-ui/core/Switch";
 import React from "react";
+import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;

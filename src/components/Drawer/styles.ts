@@ -1,11 +1,10 @@
 import {
-  createStyles,
-  makeStyles,
-  Theme,
-  withStyles,
   Accordion,
-  AccordionSummary,
-  AccordionDetails,
+
+  AccordionDetails, AccordionSummary, createStyles,
+  makeStyles,
+
+  withStyles
 } from "@material-ui/core";
 import CircularProgress from "@material-ui/core/CircularProgress";
 import styled from "styled-components";

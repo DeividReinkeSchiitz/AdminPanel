@@ -1,16 +1,17 @@
-import React, { useContext, useEffect, useState } from "react";
-
 import {
   CardActionArea,
-  CardMedia,
-  CardContent,
-  Typography,
-} from "@material-ui/core";
 
-import ExtendMenu from "../ExtendMenu";
-import { CardImage, PendentIcon, CheckedIcon, WrongIcon } from "./styles";
+  CardContent, CardMedia,
+
+  Typography
+} from "@material-ui/core";
+import React, { useContext, useEffect, useState } from "react";
 import { WeekI } from "../../common/types";
 import UserIdContext from "../../Context/userIdContext";
+import ExtendMenu from "../ExtendMenu";
+import { CardImage, CheckedIcon, PendentIcon, WrongIcon } from "./styles";
+
+
 
 interface PropsI extends WeekI {
   week: string;
@@ -63,7 +64,7 @@ const ImgMediaCard = (props: PropsI) => {
         downloadUrl={props.downloadUrl}
         userId={currentUserId}
         fileName={props.fileName}
-        updateData={() => {}}
+        updateData={() => { }}
       />
     </CardImage>
   );

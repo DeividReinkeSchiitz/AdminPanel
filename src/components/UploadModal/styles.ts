@@ -1,6 +1,6 @@
+import { Button, Collapse, Modal, TextField } from "@material-ui/core";
 import { DeleteOutline } from "@material-ui/icons";
 import styled, { css } from "styled-components";
-import { Modal, Button, TextField, Collapse } from "@material-ui/core";
 
 export const Container = styled.div`
   display: flex;
