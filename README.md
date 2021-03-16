@@ -3,7 +3,7 @@
 
 ## SEE THE PROJECT RUNNING
 
-https://romantic-wescoff-efa53e.netlify.app/
+https://azonfunction.firebaseapp.com/Login#/
 
 ## Available Scripts
 
